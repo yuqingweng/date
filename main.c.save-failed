@@ -37,19 +37,19 @@ void swap(int *a,int *b)
 #define n 5
 int main()
 {
-    int a[n];
+    int a[n+1];
     int i=0;
-    double x0,p=0.0;
+    double xo,p=0.0;
     printf("请输入系数");
-    for(;i<n;i++)
+    for(;i<n+1;i++)
     {
         scanf("%d",&a[i]);
     }
-    printf("请输入x0");
-    scanf("%lf",&x0);
+    printf("请输入xo");
+    scanf("%f",&x0);
     while(i>=0)
     {
-        p=p*x0+a[i];
+        p=p*x+a[i];
         i--;
     }
     printf("%f",p);
